@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block body %}
+<div class=container>
+  <h2>{{title}}</h2>
+  <form method='Post'>
+    {% csrf_token %}
+    {{ form.as_p}}
+    <button type='submit'>{{btnName}}</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block body %}
+<div class=container>
+
+  {% for i in posts %}
+    <div class='container'>
+    <h4>Title: {{i.title}}</h4>
+    <h4>Content: {{i.content}}</h4>
+    <h4>Author: {{i.author}}</h4>
+    <h4>Date: {{i.date}}</h4>
+    </div>
+  {% endfor %}
+
+</div>
+{% endblock %}
